@@ -62,6 +62,7 @@ export function getWhaleBalance(whale: Whale | null, token: Token | null): Whale
     let balances = whale.balances
     balances.push(id)
     whale.balances = balances
+    whale.save()
   }
   whaleBalance.balance = normalize(tokenContract.balanceOf(Address.fromString(whale.address)), token.decimals.toI32())
   whaleBalance.save()
