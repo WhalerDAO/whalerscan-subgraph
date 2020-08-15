@@ -1,13 +1,13 @@
 {
-  "name": "WhaleScan",
-  "license": "UNLICENSED",
+  "name": "Whalescan",
+  "license": "GPL-3.0-or-later",
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ WhalerDAO/WhaleScan",
-    "create-local": "graph create --node http://localhost:8020/ WhalerDAO/WhaleScan",
-    "remove-local": "graph remove --node http://localhost:8020/ WhalerDAO/WhaleScan",
-    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 WhalerDAO/WhaleScan"
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ WhalerDAO/Whalescan",
+    "create-local": "graph create --node http://localhost:8020/ WhalerDAO/Whalescan",
+    "remove-local": "graph remove --node http://localhost:8020/ WhalerDAO/Whalescan",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 WhalerDAO/Whalescan"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "0.18.0",

@@ -1,6 +1,6 @@
 specVersion: 0.0.2
 schema:
-  file: ./schema.graphql
+  file: schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: YFI
@@ -17,8 +17,8 @@ dataSources:
         - Whale
       abis:
         - name: ERC20
-          file: ./abis/ERC20.json
+          file: YFI/abis/ERC20.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: ./src/mappings/token.ts
+      file: YFI/YFI.wasm
