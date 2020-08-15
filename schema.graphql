@@ -1,7 +1,7 @@
 type Whale @entity {
   id: ID!
   address: String!
-  balances: [WhaleBalance!]! @derivedFrom(field: "whale")
+  balances: [WhaleBalance!]!
 }
 
 type Token @entity {
